@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Science Salon</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Montserrat font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Custom styles -->
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+        .gradient-bg {
+            background: linear-gradient(106deg, rgba(0,0,0,0.84) 0%, rgba(0,0,0,0) 100%);
+        }
+        .btn-primary {
+            background: linear-gradient(90deg, #ed317d 0%, #fde689 100%);
+        }
+        .btn-secondary {
+            background-color: #FFFFFF;
+            color: #ED317D;
+        }
+    </style>
+</head>
+<body class="bg-white">
+    <!-- Navigation -->
+    <nav class="bg-[#ED317D] py-6 px-4 md:px-8">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="text-white text-2xl font-bold">Data Science Salon</div>
+            <div class="hidden md:flex space-x-6">
+                <a href="#" class="text-white hover:text-gray-200">Home</a>
+                <a href="#" class="text-white hover:text-gray-200">About</a>
+                <a href="#" class="text-white hover:text-gray-200">Services</a>
+                <a href="#" class="text-white hover:text-gray-200">Contact</a>
+            </div>
+            <button class="md:hidden text-white">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative h-screen flex items-center justify-center text-white">
+        <div class="absolute inset-0 gradient-bg z-10"></div>
+        <img src="wp-content/uploads/2023/02/DSS-SEATTLE-2023.jpg" alt="Hero Background" class="absolute inset-0 w-full h-full object-cover">
+        <div class="container mx-auto px-4 relative z-20 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">Data Science Salon</h1>
+            <p class="text-xl md:text-2xl mb-8">Transforming Data into Insights</p>
+            <button class="btn-primary px-8 py-4 rounded-lg text-white font-semibold text-lg uppercase">
+                Get Started
+            </button>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-[#ED317D]">Our Services</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Feature Cards -->
+                <div class="p-6 border-2 border-[#ED317D] rounded-lg hover:shadow-lg transition-shadow">
+                    <i class="fas fa-chart-line text-4xl text-[#ED317D] mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-4">Data Analysis</h3>
+                    <p class="text-gray-600">Comprehensive data analysis and visualization services.</p>
+                </div>
+                <div class="p-6 border-2 border-[#ED317D] rounded-lg hover:shadow-lg transition-shadow">
+                    <i class="fas fa-brain text-4xl text-[#ED317D] mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-4">Machine Learning</h3>
+                    <p class="text-gray-600">Advanced machine learning solutions for your business.</p>
+                </div>
+                <div class="p-6 border-2 border-[#ED317D] rounded-lg hover:shadow-lg transition-shadow">
+                    <i class="fas fa-database text-4xl text-[#ED317D] mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-4">Data Engineering</h3>
+                    <p class="text-gray-600">Robust data engineering and pipeline solutions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="py-20 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-[#ED317D]">Our Team</h2>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Team Members -->
+                <div class="text-center">
+                    <img src="https://via.placeholder.com/150" alt="Team Member" class="rounded-full mx-auto mb-4 w-32 h-32 object-cover">
+                    <h3 class="text-xl font-semibold text-[#ED317D]">John Doe</h3>
+                    <p class="text-gray-600">Data Scientist</p>
+                </div>
+                <!-- Add more team members as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-20 bg-[#ED317D] text-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Contact Us</h2>
+            <div class="max-w-2xl mx-auto">
+                <form class="space-y-6">
+                    <div>
+                        <input type="text" placeholder="Your Name" class="w-full px-4 py-3 rounded-lg text-gray-800">
+                    </div>
+                    <div>
+                        <input type="email" placeholder="Your Email" class="w-full px-4 py-3 rounded-lg text-gray-800">
+                    </div>
+                    <div>
+                        <textarea placeholder="Your Message" rows="4" class="w-full px-4 py-3 rounded-lg text-gray-800"></textarea>
+                    </div>
+                    <button class="btn-secondary px-8 py-4 rounded-lg font-semibold text-lg uppercase w-full">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Data Science Salon</h3>
+                    <p class="text-gray-400">Transforming data into actionable insights.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Home</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">About</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Services</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contact Info</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><i class="fas fa-map-marker-alt mr-2"></i> 123 Data Street</li>
+                        <li><i class="fas fa-phone mr-2"></i> (555) 123-4567</li>
+                        <li><i class="fas fa-envelope mr-2"></i> info@datasciencesalon.com</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Follow Us</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 Data Science Salon. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile menu toggle
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuButton = document.querySelector('button');
+            const mobileMenu = document.querySelector('.md\\:flex');
+            
+            menuButton.addEventListener('click', function() {
+                mobileMenu.classList.toggle('hidden');
+            });
+        });
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

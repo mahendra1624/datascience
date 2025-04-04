@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Science Salon</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+<body class="font-sans">
+    <!-- Header -->
+    <header class="bg-white shadow-md">
+        <nav class="bg-gray-800 ">
+            <div class="max-w-6xl mx-auto py-4 px-8 flex items-center justify-between">
+            <!-- Logo -->
+            <div class="text-white text-lg font-semibold flex items-center">
+              <a href="/">  <span class="text-pink-500">DATA</span><span class="text-white">SCIENCE</span><span class="text-gray-400">SALON</span></a>
+            </div>
+            
+            <!-- Menu Items -->
+            <ul class="flex space-x-6 text-pink-400 text-sm z-50">
+                <li class="relative group">
+                    <button class="dropdown-btn flex items-center hover:text-white">EVENTS 
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <ul class="dropdown-menu absolute hidden group-hover:block bg-gray-700 text-white rounded mt-6 py-3 w-60 border-t-4 border-pink-400">
+                        <li><a href="dss-sea-ai.html" class="block px-4 py-3 hover:bg-gray-600 text-pink-400">DSS SEA: Applying AI &#038; Machine Learning to Retail &#038; Ecommerce</a></li>
+                        <!-- <li><a href="event-2.html" class="block px-4 py-2 hover:bg-gray-600 text-pink-400">Event 2</a></li> -->
+                    </ul>
+                </li>
+                <li><a href="#" class="hover:text-white">GET INVOLVED</a></li>
+                <li class="relative group">
+                    <button class="dropdown-btn flex items-center hover:text-white">ABOUT 
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <ul class="dropdown-menu absolute hidden group-hover:block bg-gray-700 text-white rounded mt-6 py-3 w-48 border-t-4 border-pink-400">
+                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-600">About Us</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-600">Contact</a></li>
+                    </ul>
+                </li>
+            </ul>
+    
+            <!-- Button -->
+            <a href="#" class="bg-pink-500 text-white px-4 py-2 rounded-lg text-sm hover:bg-pink-600">UPCOMING EVENTS</a>
+        </div>
+        </nav>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white">
+        <div class="container mx-auto px-4 py-4">
+            <ul class="space-y-4">
+                <li><a href="#" class="block text-gray-800">Events</a></li>
+                <li><a href="#" class="block text-gray-800">Get Involved</a></li>
+                <li><a href="#" class="block text-gray-800">About</a></li>
+                <li><a href="#" class="block bg-[#ED317D] text-white px-6 py-2 rounded-lg text-center">UPCOMING EVENTS</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+    <section class="relative h-screen">
+        <div class="absolute inset-0">
+            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c" alt="Hero Background" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-gradient-to-r from-black/70 to-black/50"></div>
+        </div>
+        <div class="relative container mx-auto px-4 h-full flex items-center">
+            <div class="max-w-2xl text-white">
+                <h1 class="text-5xl font-bold mb-6 animate-on-scroll">Empowering Women in Tech</h1>
+                <p class="text-xl mb-8 animate-on-scroll">Join our community of women in technology and be part of the change.</p>
+                <button class="btn-primary px-8 py-3 rounded-full text-white font-semibold animate-on-scroll">Get Started</button>
+            </div>
+        </div>
+    </section>
+
+
+    
+    <!-- Navbar -->
+    <div id="inner-navbar" class="hidden fixed top-0 w-full bg-pink-500 text-white transition-all duration-300 shadow-lg z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-center h-16">
+                <div class="flex  space-x-8">
+
+                    <!-- Desktop Menu -->
+                    <ul class="hidden md:flex space-x-6 items-center justify-center">
+                        <li><a href="https://www.datascience.salon/newyork" class="hover:text-pink-400">Overview</a></li>
+                        <li><a href="https://www.datascience.salon/newyork/#speakers" class="hover:text-pink-400">Speakers</a></li>
+                        <li><a href="https://www.datascience.salon/newyork/apply-to-attend-nyc-finance-and-technology/" class="hover:text-pink-400">Apply to Attend</a></li>
+                        <li><a href="https://www.datascience.salon/newyork/#register" class="bg-pink-500 px-4 py-2 rounded hover:bg-pink-600">REGISTER</a></li>
+                    </ul>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="menu-btn" class="md:hidden focus:outline-none">
+                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-900">
+            <ul class="flex flex-col space-y-4 p-4">
+                <li><a href="https://www.datascience.salon/newyork" class="hover:text-pink-400">Overview</a></li>
+                <li><a href="https://www.datascience.salon/newyork/#speakers" class="hover:text-pink-400">Speakers</a></li>
+                <li><a href="https://www.datascience.salon/newyork/apply-to-attend-nyc-finance-and-technology/" class="hover:text-pink-400">Apply to Attend</a></li>
+                <li><a href="https://www.datascience.salon/newyork/#register" class="bg-pink-500 px-4 py-2 rounded hover:bg-pink-600">REGISTER</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Team Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Speakers</h2>
+            <div class="grid grid-cols-1 md:grid-cols-5 gap-8 px-8">
+                <div class="card bg-white rounded-lg overflow-hidden animate-on-scroll ">
+                    <img src="../../img/Winnie-Cheng-.webp" alt="Team Member" class="w-full h-48 object-cover hover:border-4 border-pink-500">
+                    <div class="p-2">
+                        <h3 class="text-xl font-semibold text-center mb-2 text-pink-500">Winnie Cheng</h3>
+                        <p class="text-pink-500 text-center">Chief Data Scientist, Next Gen Audit at PWC</p>
+                    </div>
+                </div>
+                <div class="card bg-white rounded-lg overflow-hidden animate-on-scroll">
+                    <img src="../../img/Sajjad-Farahani.webp" alt="Team Member" class="w-full h-48 object-cover hover:border-4 border-pink-500">
+                    <div class="p-2">
+                        <h3 class="text-xl font-semibold mb-2 text-center text-pink-500">Sajjad Farahani</h3>
+                        <p class="text-pink-500 text-center">
+                            Lead Data Scientist at S&P Global Market Intelligence</p>
+                    </div>
+                </div>
+                <div class="card bg-white rounded-lg overflow-hidden animate-on-scroll">
+                    <img src="../../img/Kaili-Li.webp" alt="Team Member" class="w-full h-48 object-cover hover:border-4 border-pink-500">
+                    <div class="p-2">
+                        <h3 class="text-xl font-semibold mb-2 text-center text-pink-500">Kaili Li</h3>
+                        <p class="text-pink-500 text-center">Sr Manager, Data Science at T-mobile</p>
+                    </div>
+                </div>
+                <div class="card bg-white rounded-lg overflow-hidden animate-on-scroll ">
+                    <img src="../../img/Vincent-David.webp" alt="Team Member" class="w-full h-48 object-cover hover:border-4 border-pink-500">
+                    <div class="p-2">
+                        <h3 class="text-xl font-semibold mb-2 text-center text-pink-500">Vincent David</h3>
+                        <p class="text-pink-500 text-center">Senior Director – Machine Learning at Capital One</p>
+                    </div>
+                </div>
+                <div class="card bg-white rounded-lg overflow-hidden animate-on-scroll ">
+                    <img src="../../img/Erin-Stanton.webp" alt="Team Member" class="w-full h-48 object-cover hover:border-4 border-pink-500">
+                    <div class="p-2">
+                        <h3 class="text-xl font-semibold mb-2 text-center text-pink-500">Erin Stanton</h3>
+                        <p class="text-pink-500 text-center">Global Head of Analytics Coverage at Virtu Financial</p>
+                    </div>
+                </div>
+
+                <!-- second row -->
+                <div class="card bg-white rounded-lg overflow-hidden animate-on-scroll ">
+                    <img src="../../img/Otakar-Hubschmann.webp" alt="Team Member" class="w-full h-48 object-cover hover:border-4 border-pink-500">
+                    <div class="p-2">
+                        <h3 class="text-xl font-semibold text-center mb-2 text-pink-500">Otakar Hubschmann</h3>
+                        <p class="text-pink-500 text-center">Head of Applied Data- Machine Learning and Data Science at TransRe</p>
+                    </div>
+                </div>
+                <div class="card bg-white rounded-lg overflow-hidden animate-on-scroll">
+                    <img src="../../img/Picture1.png" alt="Team Member" class="w-full h-48 object-cover hover:border-4 border-pink-500">
+                    <div class="p-2">
+                        <h3 class="text-xl font-semibold mb-2 text-center text-pink-500">Bala Gangadhar Thilak Adiboina</h3>
+                        <p class="text-pink-500 text-center">
+                            DMTS- Data Science Verizon</p>
+                    </div>
+                </div>
+                <div class="card bg-white rounded-lg overflow-hidden animate-on-scroll">
+                    <img src="../../img/Harry-Mendell-DSS.webp" alt="Team Member" class="w-full h-48 object-cover hover:border-4 border-pink-500">
+                    <div class="p-2">
+                        <h3 class="text-xl font-semibold mb-2 text-center text-pink-500">Harry Mendell</h3>
+                        <p class="text-pink-500 text-center">Sr Researcher at Federal Reserve Bank of NY</p>
+                    </div>
+                </div>
+                <div class="card bg-white rounded-lg overflow-hidden animate-on-scroll ">
+                    <img src="../../img/Martin-Staniforth-DSS.webp" alt="Team Member" class="w-full h-48 object-cover hover:border-4 border-pink-500">
+                    <div class="p-2">
+                        <h3 class="text-xl font-semibold mb-2 text-center text-pink-500">Martin Staniforth</h3>
+                        <p class="text-pink-500 text-center">Technical Product Director at Eigen Technologies</p>
+                    </div>
+                </div>
+                <div class="card bg-white rounded-lg overflow-hidden animate-on-scroll ">
+                    <img src="../../img/Chong-Dang.webp" alt="Team Member" class="w-full h-48 object-cover hover:border-4 border-pink-500">
+                    <div class="p-2">
+                        <h3 class="text-xl font-semibold mb-2 text-center text-pink-500">Chong Dang</h3>
+                        <p class="text-pink-500 text-center">Lead Machine Learning Engineer at Freddie Mac</p>
+                    </div>
+                </div>
+
+
+                <!-- 4th row -->
+
+                <div class="card bg-white rounded-lg overflow-hidden animate-on-scroll ">
+                    <img src="../../img/Alec-Coughlin-DSS.webp" alt="Team Member" class="w-full h-48 object-cover hover:border-4 border-pink-500">
+                    <div class="p-2">
+                        <h3 class="text-xl font-semibold text-center mb-2 text-pink-500">Alec Coughlin</h3>
+                        <p class="text-pink-500 text-center">Client Partner, Financial Services Strategic Group at LivePerson</p>
+                    </div>
+                </div>
+                <div class="card bg-white rounded-lg overflow-hidden animate-on-scroll">
+                    <img src="../../img/Hongfei-Li.webp" alt="Team Member" class="w-full h-48 object-cover hover:border-4 border-pink-500">
+                    <div class="p-2">
+                        <h3 class="text-xl font-semibold mb-2 text-center text-pink-500"> Hongfei Li</h3>
+                        <p class="text-pink-500 text-center">Head of Analytics at Point72</p>
+                    </div>
+                </div>
+                <div class="card bg-white rounded-lg overflow-hidden animate-on-scroll">
+                    <img src="../../img/Michael-Kortering-DSS.webp" alt="Team Member" class="w-full h-48 object-cover hover:border-4 border-pink-500">
+                    <div class="p-2">
+                        <h3 class="text-xl font-semibold mb-2 text-center text-pink-500">Michael Kortering</h3>
+                        <p class="text-pink-500 text-center">
+                            Chief Credit Officer at Reprise Financial</p>
+                    </div>
+                </div>
+                <div class="card bg-white rounded-lg overflow-hidden animate-on-scroll ">
+                    <img src="../../img/Dan-Hebert-DSS.webp" alt="Team Member" class="w-full h-48 object-cover hover:border-4 border-pink-500">
+                    <div class="p-2">
+                        <h3 class="text-xl font-semibold mb-2 text-center text-pink-500">Daniel Hebert</h3>
+                        <p class="text-pink-500 text-center">Senior Manager, Data Science at FourSquare</p>
+                    </div>
+                </div>
+                <div class="card bg-white rounded-lg overflow-hidden animate-on-scroll ">
+                    <img src="../../img/Francisco-Alberini-2nd-degree-connection2nd-Product-at-Monte-Carlo.webp" alt="Team Member" class="w-full h-48 object-cover hover:border-4 border-pink-500">
+                    <div class="p-2">
+                        <h3 class="text-xl font-semibold mb-2 text-center text-pink-500">Francisco Alberini</h3>
+                        <p class="text-pink-500 text-center">Product Manager at Monte Carlo</p>
+                    </div>
+                </div>
+
+
+
+                <!-- 5th row -->
+                <div class="card bg-white rounded-lg overflow-hidden animate-on-scroll ">
+                    <img src="../../img/Lior-Solomon-VP-of-Data-at-Drata-.webp" alt="Team Member" class="w-full h-48 object-cover hover:border-4 border-pink-500">
+                    <div class="p-2">
+                        <h3 class="text-xl font-semibold mb-2 text-center text-pink-500"> Lior Solomon</h3>
+                        <p class="text-pink-500 text-center"> VP of Data at Drata</p>
+                    </div>
+                </div>
+               
+               
+                <div class="card bg-white rounded-lg overflow-hidden animate-on-scroll ">
+                    <img src="../../img/Justin-Fine-DSS.webp" alt="Team Member" class="w-full h-48 object-cover hover:border-4 border-pink-500">
+                    <div class="p-2">
+                        <h3 class="text-xl font-semibold text-center mb-2 text-pink-500">Justin Fine</h3>
+                        <p class="text-pink-500 text-center">Director of Field Engineering at Katana Graph</p>
+                    </div>
+                </div>
+                <div class="card bg-white rounded-lg overflow-hidden animate-on-scroll">
+                    <img src="../../img/Paige-Roberts-DSS.webp" alt="Team Member" class="w-full h-48 object-cover hover:border-4 border-pink-500">
+                    <div class="p-2">
+                        <h3 class="text-xl font-semibold mb-2 text-center text-pink-500"> Paige Roberts</h3>
+                        <p class="text-pink-500 text-center">
+                           Open Source Relations Manager at Vertica</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-20">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">What Our Members Say</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="card bg-white p-6 rounded-lg shadow-lg animate-on-scroll">
+                    <p class="text-gray-600 mb-4">"This community has been instrumental in my career growth. The support and mentorship are invaluable."</p>
+                    <div class="flex items-center">
+                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb" alt="Testimonial" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-semibold">Jessica Lee</h4>
+                            <p class="text-gray-500">Software Engineer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card bg-white p-6 rounded-lg shadow-lg animate-on-scroll">
+                    <p class="text-gray-600 mb-4">"The workshops and events have helped me develop new skills and build a strong network in the tech industry."</p>
+                    <div class="flex items-center">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330" alt="Testimonial" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-semibold">Rachel Kim</h4>
+                            <p class="text-gray-500">Product Manager</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card bg-white p-6 rounded-lg shadow-lg animate-on-scroll">
+                    <p class="text-gray-600 mb-4">"Being part of this community has given me the confidence to pursue my dreams in technology."</p>
+                    <div class="flex items-center">
+                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80" alt="Testimonial" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-semibold">Amanda Patel</h4>
+                            <p class="text-gray-500">Data Scientist</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="max-w-2xl mx-auto">
+                <h2 class="text-3xl font-bold text-center mb-12">Get in Touch</h2>
+                <form class="space-y-6">
+                    <div>
+                        <label class="block text-gray-700 mb-2" for="name">Name</label>
+                        <input type="text" id="name" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-[#ED317D]" required>
+                    </div>
+                    <div>
+                        <label class="block text-gray-700 mb-2" for="email">Email</label>
+                        <input type="email" id="email" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-[#ED317D]" required>
+                    </div>
+                    <div>
+                        <label class="block text-gray-700 mb-2" for="message">Message</label>
+                        <textarea id="message" rows="4" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-[#ED317D]" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary w-full py-3 rounded-lg text-white font-semibold">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    </main>
+
+    <footer class="bg-gray-800 ">
+        <div class="max-w-5xl mx-auto text-white py-10 px-8 mt-10">
+        <div class="grid grid-cols-3 gap-6 text-sm text-pink-400">
+            <div>
+                <h3 class="font-bold text-[20px] mb-4">ABOUT</h3>
+                <ul class="space-y-2 text-white text-[16px] text-500">
+                    <li>About</li>
+                    <li>Contact us</li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="font-bold text-[20px] mb-4">GET INVOLVED</h3>
+            </div>
+            <div>
+                <h3 class="font-bold text-[20px] mb-4">LEARNING RESOURCES</h3>
+                <ul class="space-y-2 text-white text-[16px] text-500">     
+                    <li>DSS Youtube</li>
+                </ul>
+            </div>
+           
+        </div>
+        <div class="mt-6 flex justify-between items-center text-gray-500 text-sm">
+            <p>Made with ♥ by © 2025 FormulatedBy</p>
+        </div>
+    </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/your-code.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const dropdownButtons = document.querySelectorAll(".dropdown-btn");
+    
+            dropdownButtons.forEach(button => {
+                button.addEventListener("click", function (event) {
+                    event.stopPropagation();
+                    let dropdownMenu = this.nextElementSibling;
+                    dropdownMenu.classList.toggle("hidden");
+    
+                    // Close other open dropdowns
+                    document.querySelectorAll(".dropdown-menu").forEach(menu => {
+                        if (menu !== dropdownMenu) menu.classList.add("hidden");
+                    });
+                });
+            });
+    
+            // Close dropdown when clicking outside
+            document.addEventListener("click", function () {
+                document.querySelectorAll(".dropdown-menu").forEach(menu => {
+                    menu.classList.add("hidden");
+                });
+            });
+        });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const navbar = document.getElementById("inner-navbar");
+            const mobileMenu = document.getElementById("mobile-menu");
+            const menuBtn = document.getElementById("menu-btn");
+
+            // Sticky navbar effect
+            window.addEventListener("scroll", function () {
+                if (window.scrollY > 40) {
+                    navbar.classList.add("top-0", "bg-gray-900");
+                } else {
+                    navbar.classList.remove("top-0", "bg-gray-900");
+                }
+            });
+
+            window.addEventListener('scroll', function () {
+                const innerNavbar = document.getElementById('inner-navbar');
+                const heroSection = document.querySelector('section.relative'); // Hero image section
+
+                if (window.scrollY > heroSection.offsetHeight - 50) {
+                    innerNavbar.classList.remove('hidden');
+                } else {
+                    innerNavbar.classList.add('hidden');
+                }
+            });
+
+            // Mobile menu toggle
+            menuBtn.addEventListener("click", function () {
+                mobileMenu.classList.toggle("hidden");
+            });
+        });
+    </script>
+</body>
+</html>
